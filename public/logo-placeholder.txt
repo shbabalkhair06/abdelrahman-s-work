@@ -1,0 +1,6 @@
+ضع صورة الشعار هنا باسم logo.png
+
+Place your logo image here as logo.png
+
+The logo should be a square image (recommended: 512x512px or higher)
+The image will be displayed in a circular frame next to the team name in the navbar.

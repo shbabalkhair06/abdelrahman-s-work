@@ -1,0 +1,5 @@
+ضع صورة الفريق هنا باسم team-photo.jpg
+
+Place your team photo here as team-photo.jpg
+
+The image will be displayed in the "About Us" section alongside the team description.
