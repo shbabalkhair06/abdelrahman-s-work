@@ -27,53 +27,52 @@ const About = () => {
         <SectionTitle title={t.title} />
 
         <div className="max-w-6xl mx-auto">
-          {/* About Content - Image with Text Overlay but showing all people */}
+          {/* About Content - Image with Text Overlay */}
           <div className="relative mb-16 animate-fade-in-up">
             <div className="relative rounded-3xl overflow-hidden shadow-luxury">
-
-              {/* Image - Full width, natural aspect ratio to show all people */}
+              {/* Image - Full width with minimum height on mobile to fit text */}
               <img
                 src="/about-us.jpg"
                 alt={language === 'ar' ? 'فريق شباب الخير' : 'Shabab Al-Khair Team'}
-                className="w-full h-auto block"
+                className="w-full h-auto block object-cover min-h-[450px] sm:min-h-[400px] md:min-h-0"
                 onError={(e) => {
                   e.target.style.display = 'none';
                 }}
               />
 
-              {/* Gradient Overlay - Only at bottom to not cover people */}
-              <div className="absolute inset-0 bg-gradient-to-t from-primary-dark via-primary-dark/40 to-transparent" />
+              {/* Gradient Overlay - Stronger on mobile */}
+              <div className="absolute inset-0 bg-gradient-to-t from-primary-dark via-primary-dark/60 md:via-primary-dark/40 to-transparent" />
 
-              {/* Decorative corner accents */}
-              <div className="absolute top-0 left-0 w-24 h-24 border-t-4 border-l-4 border-luxury-gold/40 rounded-tl-3xl" />
-              <div className="absolute top-0 right-0 w-24 h-24 border-t-4 border-r-4 border-luxury-gold/40 rounded-tr-3xl" />
-              <div className="absolute bottom-0 left-0 w-24 h-24 border-b-4 border-l-4 border-luxury-gold/40 rounded-bl-3xl" />
-              <div className="absolute bottom-0 right-0 w-24 h-24 border-b-4 border-r-4 border-luxury-gold/40 rounded-br-3xl" />
+              {/* Decorative corner accents - Smaller on mobile */}
+              <div className="absolute top-0 left-0 w-12 h-12 md:w-24 md:h-24 border-t-4 border-l-4 border-luxury-gold/40 rounded-tl-3xl" />
+              <div className="absolute top-0 right-0 w-12 h-12 md:w-24 md:h-24 border-t-4 border-r-4 border-luxury-gold/40 rounded-tr-3xl" />
+              <div className="absolute bottom-0 left-0 w-12 h-12 md:w-24 md:h-24 border-b-4 border-l-4 border-luxury-gold/40 rounded-bl-3xl" />
+              <div className="absolute bottom-0 right-0 w-12 h-12 md:w-24 md:h-24 border-b-4 border-r-4 border-luxury-gold/40 rounded-br-3xl" />
 
               {/* Text Content Overlay - At bottom */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 lg:p-12">
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-10 lg:p-12">
                 <div className="max-w-4xl mx-auto">
                   {/* Glass card */}
-                  <div className="bg-primary-dark/70 backdrop-blur-md rounded-2xl p-6 md:p-8 border border-white/20 shadow-2xl">
+                  <div className="bg-primary-dark/80 md:bg-primary-dark/70 backdrop-blur-md rounded-xl md:rounded-2xl p-4 sm:p-5 md:p-8 border border-white/20 shadow-2xl">
                     {/* Decorative line */}
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="w-10 h-1 rounded-full bg-gradient-to-r from-luxury-gold to-accent" />
-                      <span className="text-luxury-gold text-xl">✦</span>
+                    <div className="flex items-center gap-2 md:gap-4 mb-3 md:mb-4">
+                      <div className="w-6 md:w-10 h-1 rounded-full bg-gradient-to-r from-luxury-gold to-accent" />
+                      <span className="text-luxury-gold text-base md:text-xl">✦</span>
                       <div className="flex-1 h-px bg-gradient-to-r from-luxury-gold/50 to-transparent" />
                     </div>
 
-                    <p className="text-base md:text-lg lg:text-xl leading-relaxed mb-4 font-medium text-white drop-shadow-lg">
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-3 md:mb-4 font-medium text-white drop-shadow-lg">
                       {t.description}
                     </p>
-                    <p className="text-base md:text-lg lg:text-xl leading-relaxed font-medium text-white/90 drop-shadow-lg">
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed font-medium text-white/90 drop-shadow-lg">
                       {t.description2}
                     </p>
 
                     {/* Decorative bottom line */}
-                    <div className="flex items-center gap-4 mt-4 justify-end">
+                    <div className="flex items-center gap-2 md:gap-4 mt-3 md:mt-4 justify-end">
                       <div className="flex-1 h-px bg-gradient-to-l from-luxury-gold/50 to-transparent" />
-                      <span className="text-luxury-gold text-xl">✦</span>
-                      <div className="w-10 h-1 rounded-full bg-gradient-to-l from-luxury-gold to-accent" />
+                      <span className="text-luxury-gold text-base md:text-xl">✦</span>
+                      <div className="w-6 md:w-10 h-1 rounded-full bg-gradient-to-l from-luxury-gold to-accent" />
                     </div>
                   </div>
                 </div>
