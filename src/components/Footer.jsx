@@ -80,9 +80,7 @@ const Footer = () => {
             {/* Brand Section */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-14 h-14 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center border border-white/20">
-                  <span className="text-3xl">💚</span>
-                </div>
+
                 <div>
                   <h3 className="text-xl font-bold">
                     {language === 'ar' ? 'فريق شباب الخير' : 'Shabab Al-Khair'}
@@ -212,14 +210,9 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Divider with decoration */}
+          {/* Divider */}
           <div className="relative py-8">
-            <div className="absolute inset-0 flex items-center">
-              <div className="w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-            </div>
-            <div className="relative flex justify-center">
-              <span className="bg-primary-dark px-6 text-luxury-gold text-2xl">✦</span>
-            </div>
+            <div className="w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
           </div>
 
           {/* Developer Section */}
