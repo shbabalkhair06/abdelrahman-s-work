@@ -273,12 +273,12 @@ const Home = () => {
             </button>
 
             <button
-              onClick={() => scrollToSection('initiatives')}
+              onClick={() => scrollToSection('volunteer-opportunities')}
               className="group relative overflow-hidden border-2 border-white/50 text-white px-8 md:px-10 py-4 rounded-xl font-bold text-lg backdrop-blur-sm transition-all duration-500 hover:border-luxury-gold hover:shadow-glow-gold hover:-translate-y-1 hover:scale-105"
             >
               <span className="flex items-center justify-center gap-2">
-                <span className="text-2xl group-hover:animate-wave">🌟</span>
-                {t.initiativesBtn}
+                <span className="text-2xl group-hover:animate-wave">🤝</span>
+                {language === 'ar' ? 'فرص التطوع' : 'Volunteer'}
               </span>
             </button>
           </div>

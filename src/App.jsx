@@ -9,6 +9,7 @@ import JoinUs from './pages/JoinUs';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Partners from './pages/Partners';
+import VolunteerOpportunity from './pages/VolunteerOpportunity';
 
 // Language Context
 export const LanguageContext = createContext();
@@ -67,6 +68,9 @@ function App() {
           </div>
           <div id="initiatives">
             <Initiatives />
+          </div>
+          <div id="volunteer-opportunities">
+            <VolunteerOpportunity />
           </div>
           <div id="join">
             <JoinUs />
